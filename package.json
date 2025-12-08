@@ -1,0 +1,25 @@
+{
+  "name": "log-analyzer",
+  "version": "1.0.0",
+  "description": "分析日志文件，统计 IP 访问次数并查询归属地",
+  "type": "module",
+  "main": "analyze-logs.js",
+  "scripts": {
+    "start": "node analyze-logs.js",
+    "filter": "node filterJiangSu.js",
+    "generate": "node generateFilterIP.js"
+  },
+  "keywords": [
+    "log",
+    "analyzer",
+    "ip",
+    "statistics"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "ip2region.js": "^3.1.6"
+  },
+  "devDependencies": {}
+}

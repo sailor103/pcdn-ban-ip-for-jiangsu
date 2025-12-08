@@ -1,0 +1,4 @@
+logs/
+ip2region_v4.xdb
+*.csv
+node_modules/
