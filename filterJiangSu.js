@@ -52,9 +52,9 @@ function main() {
   const content = fs.readFileSync(CSV_PATH, 'utf8');
   const { records } = parseCsv(content);
 
-  // 筛选：归属地包含“江苏”，且访问次数 > 80
+  // 筛选：归属地包含“江苏”，且访问次数 > 70
   const filtered = records.filter(
-    (r) => r.count > 80 && r.location.includes('江苏')
+    (r) => r.count > 70 && r.location.includes('江苏')
   );
 
   // 生成 CIDR
