@@ -197,9 +197,10 @@ function main() {
   });
 }
 
-// 导出函数供测试使用
-export { parseIPSegment, isContained, ipToBigInt };
+export { parseIPSegment, isContained, ipToBigInt, mergeIPSegments, compareIPs };
 
-// 运行主函数
-main();
+const isDirectRun = process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1]);
+if (isDirectRun) {
+  main();
+}
 

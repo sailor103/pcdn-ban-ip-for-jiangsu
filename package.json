@@ -5,9 +5,7 @@
   "type": "module",
   "main": "analyze-logs.js",
   "scripts": {
-    "start": "node analyze-logs.js",
-    "filter": "node filterJiangSu.js",
-    "generate": "node generateFilterIP.js"
+    "start": "node analyze-logs.js"
   },
   "keywords": [
     "log",
