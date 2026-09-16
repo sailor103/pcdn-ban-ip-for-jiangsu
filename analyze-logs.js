@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 
 const MIN_COUNT = 500;
 const MIN_BYTES = 50 * 1024 * 1024; // 50 MiB，按单日统计
-const MIN_CONSECUTIVE = 10;
+const MIN_CONSECUTIVE = 5;
 
 // 搜索引擎爬虫 UA。不含 SEO 抓取器、通用 crawler。
 const SEARCH_CRAWLER_UA = /(?:googlebot|google-inspectiontool|adsbot-google|mediapartners-google|storebot-google|bingbot|msnbot|bingpreview|baiduspider|sogou|360spider|yisouspider|haosouspider|bytespider|applebot|duckduckbot|yandex(?:bot|images)|petalbot|oai-searchbot|amzn-searchbot|amazonbot|meta-webindexer|exasearchbot)/i;
